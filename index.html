@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desenvolvimento Web - Semana 05</title>
+  <style>
+    body { font-family: sans-serif; max-width: 700px; margin: 30px auto; padding: 0 15px; }
+    section { border: 1px solid #ccc; padding: 20px; border-radius: 8px; margin-bottom: 25px; }
+    input { padding: 8px; margin-right: 8px; }
+    button { padding: 8px 12px; cursor: pointer; }
+    .status { font-weight: bold; margin-top: 10px; }
+    dt { font-weight: bold; margin-top: 5px; }
+    dd { margin-left: 0; margin-bottom: 5px; }
+  </style>
+</head>
+<body>
+
+  <h1>Desenvolvimento Web - Objetos e Assincronismo</h1>
+
+  <section>
+    <h2>Parte 1 - Validação e Resumo de Pedidos</h2>
+    <div id="saida-pedidos"></div>
+  </section>
+
+  <section>
+    <h2>Parte 2 - Buscador de CEP</h2>
+    <form id="form-cep">
+      <input type="text" id="input-cep" placeholder="Digite o CEP (somente números)" maxlength="9">
+      <button type="submit" id="btn-cep">Buscar CEP</button>
+    </form>
+    <div id="status-cep" class="status"></div>
+    <div id="resultado-cep"></div>
+
+    <h3>Histórico de buscas:</h3>
+    <ul id="lista-historico"></ul>
+  </section>
+
+  <section>
+    <h2>Parte 3 - Mini Pokédex</h2>
+    <form id="form-poke">
+      <input type="text" id="input-poke" placeholder="Nome do Pokémon (ex: pikachu)">
+      <button type="submit" id="btn-poke">Buscar</button>
+    </form>
+    <div id="status-poke" class="status"></div>
+    <div id="resultado-poke"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
